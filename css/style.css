@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Kanit:wght@100&family=Oleo+Script+Swash+Caps&family=Patrick+Hand&family=Press+Start+2P&display=swap');
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+.container {
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(137, 130, 7, 0.277);
+}
+.container .header h1{
+    padding: 2% 0 1% 0;
+    color: rgba(0, 0, 0, 0.726);
+    font-size: 4rem;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 200;
+    text-align: center;
+}
+.container .output{
+    /* background-color: blue; */
+    display: flex;
+    width: 100%;
+}
+.container .output .left{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    overflow: hidden;
+    margin: 2% 0 0 0.5%;
+    background-color: rgba(52, 75, 176, 0.484);
+    width: 50%;
+    height: 81.4vh;
+}
+.container .output h2{
+    text-align: center;
+    font-family: 'Black Ops One', cursive;
+    padding: 2% 0 1% 0;
+    font-size: 2rem;
+}
+.container .left textarea{
+    color: aliceblue;
+    background-color: rgba(32, 86, 86, 0.915);
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.4rem;
+    padding-left: 10px;
+    width: 99.7%;
+    height: 72.5vh;
+    resize: none;
+    border: 1px solid rgba(32, 86, 86, 0.915);
+}
+.container .left textarea:focus{
+    border: 1px solid rgba(32, 86, 86, 0.915);
+    outline: none;
+}
+.container .output .right{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    margin: 2% 0 0 0.5%;
+    background-color: rgba(52, 75, 176, 0.484);
+    width: 48.6%;
+}
+.container .output .right #OutputScreen{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+    overflow-wrap: break-word;
+    background-color:rgba(191, 207, 48, 0.373) ;
+    width: 100%;
+    height: 73vh;
+}
+
+/* -----Applying media Query---- */
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+
+}
+ 
+/* For Tablet View */
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+
+}
+ 
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px)
+and (orientation: portrait) {
+.container{
+    overflow: hidden;
+    width: 100%;
+}
+.container .header h1{
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+.container .output .left{
+    height: 150%;
+}
+.container .output{
+    height: 100vh;
+}
+.container .output textarea{
+    overflow: hidden;
+    height: 85.7vh; 
+
+}
+.container .output .right #OutputScreen{
+    height: 85.7vh; 
+}
+.container .output h2{
+    font-size: 1.4rem;
+}
+}
+@media screen and (max-device-width: 820px)
+and (orientation: landscape) {
+    .container .header h1{
+        padding-top: 1rem;
+        font-size: 0rem;
+    }
+}
+/* For Mobile Landscape View */
+/* @media screen and (max-device-width: 640px)
+and (orientation: landscape) {
+
+}
+  */
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+
+
+}
+ 
+/* For iPhone 4 Portrait or Landscape View */
+@media screen and (min-device-width: 320px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+ 
+/* For iPhone 5 Portrait or Landscape View */
+@media (device-height: 568px) and (device-width: 320px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+ 
+/* For iPhone 6 and 6 plus Portrait or Landscape View */
+@media (min-device-height: 667px) and (min-device-width: 375px)
+and (-webkit-min-device-pixel-ratio: 3) {
+
+}
